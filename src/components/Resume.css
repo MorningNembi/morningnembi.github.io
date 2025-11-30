@@ -1,0 +1,71 @@
+.resume-section {
+    padding-bottom: 100px;
+}
+
+/* Skills Content */
+.skills-content {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}
+
+.skills-section {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.skills-section h3 {
+    font-size: 1.8rem;
+    color: var(--text-primary);
+    margin-bottom: 10px;
+    font-weight: 700;
+}
+
+.skills-category {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.skills-category h4 {
+    font-size: 1.2rem;
+    color: var(--text-secondary);
+    font-weight: 600;
+    margin-bottom: 5px;
+}
+
+.skills-badges {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+.skills-badges img {
+    height: 28px;
+    transition: var(--transition);
+}
+
+.skills-badges img:hover {
+    transform: translateY(-2px);
+    filter: brightness(1.1);
+}
+
+@media (max-width: 968px) {
+    .resume-header-row {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .skills-section h3 {
+        font-size: 1.5rem;
+    }
+
+    .skills-category h4 {
+        font-size: 1.1rem;
+    }
+
+    .skills-badges img {
+        height: 24px;
+    }
+}
