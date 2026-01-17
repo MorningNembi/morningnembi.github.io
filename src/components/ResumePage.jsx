@@ -3,7 +3,6 @@ import { motion, AnimatePresence } from 'framer-motion';
 import { FaGithub, FaExternalLinkAlt, FaTimes, FaFileAlt, FaBriefcase, FaGraduationCap, FaCertificate, FaTrophy } from 'react-icons/fa';
 import { useLanguage } from '../contexts/LanguageContext';
 import { content } from '../data/content';
-import profileImage from '../assets/profile.jpeg';
 import './ResumePage.css';
 
 const ResumePage = () => {
@@ -28,7 +27,7 @@ const ResumePage = () => {
       {/* Profile Section */}
       <div className="resume-profile-section">
         <div className="resume-profile-image">
-          <img src={profileImage} alt="Profile" />
+          <img src="/images/profile.jpeg" alt="Profile" />
         </div>
         <div className="resume-profile-info">
           <h1 className="resume-profile-name">{t.hero.name}</h1>

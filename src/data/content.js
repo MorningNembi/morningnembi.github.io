@@ -1,7 +1,9 @@
 export const content = {
   kr: {
     hero: {
+      greeting: "안녕하세요, 저는",
       name: "이정택",
+      ending: "입니다.",
       subtitle: "AI Engineer & Resercher",
       description: "복잡한 기술을 직관적인 경험으로 바꿉니다.\n사용자의 삶에 가치를 더하는 AI 서비스를 만듭니다."
     },
@@ -93,7 +95,7 @@ export const content = {
           id: 1,
           title: 'Clova Studio 쿡북 작성',
           category: 'Technical Writing',
-          image: '/src/assets/clova-cookbook.png',
+          image: '/images/clova-cookbook.png',
           description: 'Clova Studio 및 네이버 클라우드 플랫폼 기술 활용 가이드 문서 작성',
           details: {
             problem: 'Clova Studio와 네이버 클라우드 블로그에 업로드 될 쿡북 작성',
@@ -118,7 +120,7 @@ export const content = {
           id: 2,
           title: '뭉치면 산다 (Moongsan)',
           category: 'AI & Data Science',
-          image: 'src/assets/moongsan.png',
+          image: '/images/moongsan.png',
           description: '판교 지역 기반 공동구매 서비스 & AI 자동화',
           details: {
             problem: '공동구매의 번거로운 절차(공고 생성, 참여 관리)와 정보 탐색의 어려움',
@@ -143,7 +145,7 @@ export const content = {
           id: 3,
           title: 'TestPrep AI',
           category: 'AI & Data Science',
-          image: 'src/assets/testprep.png',
+          image: '/images/testprep.png',
           description: '사용자 문서 기반 문제 자동 생성 서비스',
           details: {
             problem: '학습 자료를 바탕으로 스스로 문제를 만들어 공부하기 어려움',
@@ -197,7 +199,9 @@ export const content = {
   },
   en: {
     hero: {
+      greeting: "Hi, I am",
       name: "JeongTaek Lee.",
+      ending: "",
       subtitle: "AI Developer & Tech Lover",
       description: "I am an AI Developer focusing on user-centric AI services.\nI strive to create intuitive and useful AI solutions."
     },
@@ -288,7 +292,7 @@ export const content = {
           id: 1,
           title: 'Clova Studio Cookbook Writing',
           category: 'Technical Writing',
-          image: '/src/assets/clova-cookbook.png',
+          image: '/images/clova-cookbook.png',
           description: 'Technical documentation for Clova Studio and Naver Cloud Platform',
           details: {
             problem: 'Creating cookbooks for Clova Studio and Naver Cloud blog',
@@ -313,7 +317,7 @@ export const content = {
           id: 2,
           title: 'Moongsan',
           category: 'AI & Data Science',
-          image: 'src/assets/moongsan.png',
+          image: '/images/moongsan.png',
           description: 'Location-based Group Buying Service & AI Automation',
           details: {
             problem: 'Cumbersome procedures for group buying (post creation, participation management) and difficulty in finding information',
@@ -338,7 +342,7 @@ export const content = {
           id: 3,
           title: 'TestPrep AI',
           category: 'AI & Data Science',
-          image: 'src/assets/testprep.png',
+          image: '/images/testprep.png',
           description: 'Document-based Question Generation Service',
           details: {
             problem: 'Difficulty in creating self-study questions from learning materials',
