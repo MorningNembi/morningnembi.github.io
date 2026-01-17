@@ -4,7 +4,7 @@ export const content = {
       greeting: "안녕하세요, 저는",
       name: "이정택",
       ending: "입니다.",
-      subtitle: "AI Engineer & Tech Lover",
+      subtitle: "AI Engineer & Resercher",
       description: "복잡한 기술을 직관적인 경험으로 바꿉니다.\n사용자의 삶에 가치를 더하는 AI 서비스를 만듭니다.",
       cta: "프로젝트 보기"
     },
@@ -14,8 +14,8 @@ export const content = {
         "**AI로 일상을 더 쉽게 만듭니다**",
         "기술은 복잡해도 사용은 간단해야 합니다.",
         "사용자가 원하는 것을 정확히 이해하고, 직관적으로 전달하는 AI 서비스를 만듭니다.",
-        "**My Values**",
-        "😎 모든 일은 재밌어야 한다",
+        "**학력**",
+        "서울시립대학교 공간정보공학과 졸업 예정(2025.08)",
         "👌 안전함 속의 속도를 추구한다",
         "🦻 쉽게 말하고 깊게 듣으려 노력한다"
       ],

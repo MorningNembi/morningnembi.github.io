@@ -12,6 +12,7 @@ lerna-debug.log*
 !dist/assets
 dist-ssr
 *.local
+.claude
 
 # Editor directories and files
 .vscode/*

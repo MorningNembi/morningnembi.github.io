@@ -4,7 +4,7 @@ import { BrowserRouter as Router, Routes, Route, useLocation } from 'react-route
 import { LanguageProvider } from './contexts/LanguageContext';
 import Navbar from './components/Navbar';
 import Footer from './components/Footer';
-import Preloader from './components/Preloader';
+import IntroHero from './components/IntroHero';
 import ScrollToTop from './components/ScrollToTop';
 import Home from './pages/Home';
 import ChatbotButton from './components/Chatbot/ChatbotButton';
@@ -23,11 +23,15 @@ const AnimatedRoutes = () => {
 };
 
 function App() {
-  const [loading, setLoading] = useState(true);
+  const [showIntro, setShowIntro] = useState(true);
   const [isChatbotOpen, setIsChatbotOpen] = useState(false);
 
   const toggleChatbot = () => {
     setIsChatbotOpen(!isChatbotOpen);
+  };
+
+  const handleIntroComplete = () => {
+    setShowIntro(false);
   };
 
   return (
@@ -36,14 +40,15 @@ function App() {
         <ScrollToTop />
         <div className="App">
           <AnimatePresence mode="wait">
-            {loading ? (
-              <Preloader key="preloader" setLoading={setLoading} />
+            {showIntro ? (
+              <IntroHero key="intro" onComplete={handleIntroComplete} />
             ) : (
               <motion.div
                 key="main-content"
                 initial={{ opacity: 0 }}
                 animate={{ opacity: 1 }}
                 exit={{ opacity: 0 }}
+                transition={{ duration: 0.5 }}
               >
                 <Navbar />
                 <main>
@@ -54,7 +59,7 @@ function App() {
             )}
           </AnimatePresence>
 
-          {!loading && (
+          {!showIntro && (
             <>
               <ChatbotWidget isOpen={isChatbotOpen} onClose={() => setIsChatbotOpen(false)} />
               <ChatbotButton onClick={toggleChatbot} isOpen={isChatbotOpen} />
