@@ -1,31 +1,11 @@
 export const content = {
   kr: {
     hero: {
-      greeting: "안녕하세요, 저는",
       name: "이정택",
-      ending: "입니다.",
       subtitle: "AI Engineer & Resercher",
-      description: "복잡한 기술을 직관적인 경험으로 바꿉니다.\n사용자의 삶에 가치를 더하는 AI 서비스를 만듭니다.",
-      cta: "프로젝트 보기"
+      description: "복잡한 기술을 직관적인 경험으로 바꿉니다.\n사용자의 삶에 가치를 더하는 AI 서비스를 만듭니다."
     },
     about: {
-      title: "About Me",
-      intro: [
-        "**AI로 일상을 더 쉽게 만듭니다**",
-        "기술은 복잡해도 사용은 간단해야 합니다.",
-        "사용자가 원하는 것을 정확히 이해하고, 직관적으로 전달하는 AI 서비스를 만듭니다.",
-        "**학력**",
-        "서울시립대학교 공간정보공학과 졸업 예정(2025.08)",
-        "👌 안전함 속의 속도를 추구한다",
-        "🦻 쉽게 말하고 깊게 듣으려 노력한다"
-      ],
-      tabs: {
-        experience: "Experience",
-        education: "Education",
-        activities: "Activities",
-        certs: "Certifications",
-        awards: "Awards"
-      },
       experience: [
         {
           title: 'AI Synergy Planning Intern',
@@ -63,21 +43,6 @@ export const content = {
           description: ['학점 3.50/4.5']
         }
       ],
-      activities: [
-        {
-          title: '공간데이터베이스 연구실',
-          role: '학부연구생',
-          period: '2022.07 ~ 2024.06',
-          description: [
-            '공간 데이터 분석 및 시각화'
-          ]
-        },
-        {
-          title: '공간정보공학과 과학생회사무국원',
-          role: '학부연구생',
-          period: '2022.01 ~ 2022.12'
-        }
-      ],
       certs: [
         {
           title: '빅데이터분석기사',
@@ -111,13 +76,6 @@ export const content = {
       ]
     },
     portfolio: {
-      title: "Projects",
-      filters: {
-        all: "전체",
-        web: "웹 개발",
-        ai: "AI/ML",
-        research: "연구"
-      },
       modal: {
         overview: "개요",
         role: "역할",
@@ -234,37 +192,16 @@ export const content = {
       ]
     },
     resume: {
-      title: "Skills",
       skillsTitle: "Technical Skills"
     }
   },
   en: {
     hero: {
-      greeting: "Hi, I am",
       name: "JeongTaek Lee.",
-      ending: "",
       subtitle: "AI Developer & Tech Lover",
-      description: "I am an AI Developer focusing on user-centric AI services.\nI strive to create intuitive and useful AI solutions.",
-      cta: "Check out my work"
+      description: "I am an AI Developer focusing on user-centric AI services.\nI strive to create intuitive and useful AI solutions."
     },
     about: {
-      title: "About Me",
-      intro: [
-        "**AI Developer Who Puts People First**",
-        "No matter how sophisticated AI technology is, if it fails to properly understand user intent and respond accordingly, it cannot be considered good technology.",
-        "I want to create intuitive and useful AI services by viewing problems from the user's perspective!",
-        "**My Values**",
-        "😎 Everything should be fun",
-        "👌 I pursue speed with safety",
-        "🦻 I try to speak simply and listen deeply"
-      ],
-      tabs: {
-        experience: "Experience",
-        education: "Education",
-        activities: "Activities",
-        certs: "Certifications",
-        awards: "Awards"
-      },
       experience: [
         {
           title: 'AI Research & Planning Intern',
@@ -301,21 +238,6 @@ export const content = {
           description: ['GPA 3.50/4.5']
         }
       ],
-      activities: [
-        {
-          title: 'Spatial Database Lab',
-          role: 'Undergraduate Researcher',
-          period: '2022.07 ~ 2024.06',
-          description: [
-            'Spatial data analysis and visualization'
-          ]
-        },
-        {
-          title: 'Department of Geoinformatics Student Council',
-          role: 'Staff Member',
-          period: '2022.01 ~ 2022.12'
-        }
-      ],
       certs: [
         {
           title: 'Big Data Analysis Engineer',
@@ -349,18 +271,12 @@ export const content = {
       ]
     },
     portfolio: {
-      title: "Projects",
-      filters: {
-        all: "All",
-        web: "Web Dev",
-        ai: "AI/ML",
-        research: "Research"
-      },
       modal: {
         overview: "Overview",
         role: "Role",
         techStack: "Tech Stack",
         keyFeatures: "Key Features",
+        achievement: "Achievement",
         links: {
           github: "GitHub",
           demo: "Live",
@@ -471,9 +387,7 @@ export const content = {
       ]
     },
     resume: {
-      title: "Resume & Skills",
-      skillsTitle: "Technical Skills",
-      download: "Download PDF"
+      skillsTitle: "Technical Skills"
     }
   }
 };

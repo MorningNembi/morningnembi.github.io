@@ -5,7 +5,7 @@
   <meta charset="UTF-8" />
   <link rel="icon" type="image/png" href="/assets/duck.png" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>bootkorea's portfolio</title>
+  <title>morningnembi's portfolio</title>
   <!-- Redirect script for GitHub Pages SPA -->
   <script type="text/javascript">
     (function (l) {
@@ -18,13 +18,32 @@
         );
       }
     }(window.location))
-  </script>
-  <script type="module" crossorigin src="/assets/index-CawFuPus.js"></script>
-  <link rel="stylesheet" crossorigin href="/assets/index-BDQ_0PM6.css">
+  </script>
+  <script type="module" crossorigin src="/assets/index-DMWlIAgL.js"></script>
+  <link rel="stylesheet" crossorigin href="/assets/index-Dma7Qw5D.css">
 </head>
 
 <body>
   <div id="root"></div>
+  <script>
+    window.wxOConfiguration = {
+      orchestrationID: "20260114-0532-2006-7024-66ada7c70eef_20260114-0533-0139-307a-d031de3d0475",
+      hostURL: "https://ap-southeast-1.dl.watson-orchestrate.ibm.com",
+      rootElementID: "root",
+      chatOptions: {
+          agentId: "2c37b61e-b33a-450d-a4d8-a021c89d91a1",
+          agentEnvironmentId: "43a71c37-a19b-40ea-9134-bd5dc43885b9",
+      }
+    };
+    setTimeout(function () {
+      const script = document.createElement('script');
+      script.src = `${window.wxOConfiguration.hostURL}/wxochat/wxoLoader.js?embed=true`;
+      script.addEventListener('load', function () {
+          wxoLoader.init();
+      });
+      document.head.appendChild(script);
+    }, 0);
+  </script>
 </body>
 
 </html>

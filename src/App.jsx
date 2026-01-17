@@ -7,8 +7,6 @@ import Footer from './components/Footer';
 import IntroHero from './components/IntroHero';
 import ScrollToTop from './components/ScrollToTop';
 import Home from './pages/Home';
-import ChatbotButton from './components/Chatbot/ChatbotButton';
-import ChatbotWidget from './components/Chatbot/ChatbotWidgetV2';
 import './index.css';
 
 // Wrapper to handle AnimatePresence with Router
@@ -24,11 +22,6 @@ const AnimatedRoutes = () => {
 
 function App() {
   const [showIntro, setShowIntro] = useState(true);
-  const [isChatbotOpen, setIsChatbotOpen] = useState(false);
-
-  const toggleChatbot = () => {
-    setIsChatbotOpen(!isChatbotOpen);
-  };
 
   const handleIntroComplete = () => {
     setShowIntro(false);
@@ -58,13 +51,6 @@ function App() {
               </motion.div>
             )}
           </AnimatePresence>
-
-          {!showIntro && (
-            <>
-              <ChatbotWidget isOpen={isChatbotOpen} onClose={() => setIsChatbotOpen(false)} />
-              <ChatbotButton onClick={toggleChatbot} isOpen={isChatbotOpen} />
-            </>
-          )}
         </div>
       </Router>
     </LanguageProvider>
